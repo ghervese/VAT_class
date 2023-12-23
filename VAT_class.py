@@ -161,7 +161,7 @@ class VAT_App:
         Returns:
 
         """
-        print("Execution de tile coordinates")
+        # print("Execution de tile coordinates")
         self.center_coords = SkyCoord.from_name(self.object)
         self.offset_value = (self.tile_fov*(1-self.cover_pct/100.) )* u.deg
         # Direction de référence pour le décalage suivant les 
@@ -183,8 +183,8 @@ class VAT_App:
                 coord_tile_final = coord_tile_step1.directional_offset_by(position_angle_DECplus,self.offset_value*float(j))
                 self.tile_coordinates_center.append(coord_tile_final)
                 print("Coordinates of tile "+str(i+1)+"x"+str(j+1)+" :"+str(coord_tile_final))
-        print(self.tile_coordinates_center)
-        print(np.shape(self.tile_coordinates_center))
+        # print(self.tile_coordinates_center)
+        # print(np.shape(self.tile_coordinates_center))
 
     def data_overview(self):
         """
@@ -267,7 +267,7 @@ class VAT_App:
             # image_Ha = SkyView.get_images(self.objet, survey='H-Alpha Comp')[0][0]
             hdu = SkyView.get_images(self.object, survey=['DSS'],pixels=np.int64(np.round(nb_pixels/2.)),radius=self.fov)[0][0]
             wcs = WCS(hdu.header)
-            print(wcs)
+            # print(wcs)
             snr_visible, noise_mean_visible = self.SNR_calculation(hdu.data)
 
             # print("Rapport signal/bruit H-alpha ", self.objet, " :", snr_Ha)
@@ -280,7 +280,7 @@ class VAT_App:
             plt.style.use(astropy_mpl_style)
             #ax = fig_tiles.add_subplot(projection=wcs, label='overlays')
             ax = fig_tiles.add_subplot(projection=wcs)
-            print(self.tile_fov)
+            # print(self.tile_fov)
             ax.imshow(hdu.data, cmap='binary_r', origin='lower')
             ax.grid(color='black',ls='solid')
             for i in range(len(self.tile_coordinates_center)):                
