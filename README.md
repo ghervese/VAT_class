@@ -2,7 +2,19 @@
 A python class with GUI to automatize the download of .fits corresponding to a set of tiles for specific deep space object and different surveys available with SkyView
                                             VAT - Virtual Astrophotographer Tool                                                                               V0.1 by Guillaume Hervé-Secourgeon // herve-guillaume[at]orange.fr                               
 --------------------------------------------------------------------------------------------------------------------------------
-This Python class based on astropy and astroquery is dedicated to generate a set of fits images based on NASA's SkyView open observatory
+This Python class based on astropy and astroquery is dedicated to generate a set of fits images based on NASA's SkyView open observatory.
+0- The prerequisites for this Python class that are to be installed are the following classes:
+      -astroquery.skyview
+      -astropy units
+      -astropy.coordinates import SkyCoord
+      -astropy.coordinates import Angle
+      -astropy.coordinates import position_angle
+      -astropy.wcs import WCS
+      -astropy.visualization import astropy_mpl_style
+      -matplotlib.pyplot
+      -numpy
+
+
 This class provides a GUI to prepare a set of .fits files that can be post-processed with the prefered softwares of the user.
 1- In a first frame :
 
