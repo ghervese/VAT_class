@@ -7,7 +7,7 @@ A python class with GUI to automatize the download of .fits corresponding to a s
 This Python class based on astropy and astroquery is dedicated to generate a set of fits images based on NASA's SkyView open observatory.  
 
 
-0 - The prerequisites for this Python class that are to be installed are the following classes:  
+# 0 - The prerequisites for this Python class that are to be installed are the following classes:  
       -astroquery.skyview  
       -astropy units  
       -astropy.coordinates import SkyCoord  
@@ -21,7 +21,7 @@ This Python class based on astropy and astroquery is dedicated to generate a set
 
 
 This class provides a GUI to prepare a set of .fits files that can be post-processed with the prefered softwares of the user.  
-1 - In a first frame :  
+# 1 - In a first frame :  
 
 
  The user can define the object of interest (ROI) within the Messier, New General Catalog or International Catalog.  
@@ -29,7 +29,7 @@ This class provides a GUI to prepare a set of .fits files that can be post-proce
  On overview is exposed after having selected the object and the radius of the FOV.  
  The region of interest is a square area in this first version.  
  The metadata are downloaded for the considered ROI.  
-2 - In a second frame :  
+# 2 - In a second frame :  
 
  The user can specify the expected resolution in arcseconds / pixel  
  Based on that option a set of tiles is proposed considering a definition of 2400 px X 2400 px for each tile.  
