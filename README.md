@@ -38,3 +38,7 @@ This class provides a GUI to prepare a set of .fits files that can be post-proce
  - For the tile centered on the selected object : 'center_'+survey_name+'_' + object_name + '.fits'  
  - For the other tiles : 'tile#_'+survey_name+'_' + object_name + '.fits'  
  A short report is exposed, in the prompt, on the screen that summarizes the .fits files that have been downloaded and their location on the computer with the the full path.
+
+# 3 - In a third frame :  
+The user can select for 4 channels that can be used on the 3 RGB channels + 1 Luminance among the different data coming from the available missions.  
+Once done, the data are downloaded for each tile that have been selected in the 2nd frame.
