@@ -10,11 +10,9 @@ This Python class based on astropy and astroquery is dedicated to generate a set
 # 0 - The prerequisites for this Python class that are to be installed are the following classes:  
       -astroquery.skyview  
       -astropy units  
-      -astropy.coordinates import SkyCoord  
-      -astropy.coordinates import Angle  
-      -astropy.coordinates import position_angle  
-      -astropy.wcs import WCS  
-      -astropy.visualization import astropy_mpl_style  
+      -from astropy.coordinates => (SkyCoord, Angle, position_angle)
+      -from astropy.wcs => WCS  
+      -from astropy.visualization => astropy_mpl_style  
       -matplotlib.pyplot  
       -numpy  
 
